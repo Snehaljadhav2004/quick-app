@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Security Quiz</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. What does SQL stand for?</p>
+                <label><input type="radio" name="q1" value="Structured Query Language"> Structured Query Language</label><br>
+                <label><input type="radio" name="q1" value="Simple Query Language"> Simple Query Language</label><br>
+                <label><input type="radio" name="q1" value="Secure Query Language"> Secure Query Language</label><br>
+            </div>
+            <div class="question">
+                <p>2. What is XSS?</p>
+                <label><input type="radio" name="q2" value="Cross-Site Scripting"> Cross-Site Scripting</label><br>
+                <label><input type="radio" name="q2" value="Cross-Site Stealing"> Cross-Site Stealing</label><br>
+                <label><input type="radio" name="q2" value="Cross-Site Security"> Cross-Site Security</label><br>
+            </div>
+            <div class="question">
+                <p>3. What is CSRF?</p>
+                <label><input type="radio" name="q3" value="Cross-Site Request Forgery"> Cross-Site Request Forgery</label><br>
+                <label><input type="radio" name="q3" value="Cross-Site Resource Forgery"> Cross-Site Resource Forgery</label><br>
+                <label><input type="radio" name="q3" value="Cross-Site Response Forgery"> Cross-Site Response Forgery</label><br>
+            </div>
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
